@@ -7,7 +7,7 @@ const GenFeedback: React.FC = () => {
 
   return (
     <div id="generateFeedback">
-      <button onClick={handleGenerateFeedback}>Generate Feedback</button>
+      <button onClick={handleGenerateFeedback} style={{marginTop:'25px', padding:'10px'}}>Generate Feedback</button>
       {/* Feedback and Chat UI will be rendered here */}
     </div>
   );
