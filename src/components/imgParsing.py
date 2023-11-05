@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+'''from flask import Flask, request, jsonify
 import easyocr
 import os
 from werkzeug.utils import secure_filename
@@ -42,4 +42,4 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
+'''
