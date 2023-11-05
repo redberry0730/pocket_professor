@@ -10,8 +10,9 @@ const UploadImg: React.FC = () => {
   };
 
   return (
-    <div id="uploadImage">
-      <input type="file" onChange={handleFileChange} accept="image/png, image/jpeg" />
+      <div>
+      <label htmlFor="getFile">Please upload an image(png/jpeg): </label>
+      <input type="file" id="getFile" onChange={handleFileChange} accept="image/png, image/jpeg" style={{ marginBottom: '15px' }} />
     </div>
   );
 };
