@@ -1,3 +1,7 @@
+# Pocket Professor
+
+Pocket Professor is a web application that aims to solve the problem of oftentimes professors not providing enough explanations for students when they get a question wrong on exams/assignments. Students can take a photo of their exams and upload the image on Pocket Professor, and then Pocket Professor would provide explanations on why the student's answer is wrong and why the correct answer is correct. We used React framework for front-end, OCR-based image-to-text conversion APIs, OpenAI API to analyze the student's answer and provide the correct answer to the question, and Flask, CORS, and Node.js to handle server-related tasks.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
