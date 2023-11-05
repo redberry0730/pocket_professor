@@ -13,6 +13,7 @@ const AnswerBoxes: React.FC<AnswerBoxesProps> = ({ extractedText }) => {
   const [contentVisible, setContentVisible] = useState(false); // New state to manage visibility
   const [feedbackRequested, setFeedbackRequested] = useState(false);
 
+
   const textareaStyle = {
     width: '700px',
     height: '150px',
@@ -42,6 +43,7 @@ const AnswerBoxes: React.FC<AnswerBoxesProps> = ({ extractedText }) => {
   }, [extractedText]);
 
   return (
+
     <div 
       id="answerBoxes" 
       className={`rounded-box ${contentVisible ? '' : 'hidden'}`}
@@ -57,6 +59,7 @@ const AnswerBoxes: React.FC<AnswerBoxesProps> = ({ extractedText }) => {
         marginRight: 'auto'
       }}
     >
+
       {/* Content is always rendered, but visibility is controlled by contentVisible state */}
       <div>
         <label style={{ fontWeight: 'bold', marginRight: '610px' }}>Question:</label>
@@ -85,4 +88,6 @@ const AnswerBoxes: React.FC<AnswerBoxesProps> = ({ extractedText }) => {
   );
 };
 
+
 export default AnswerBoxes;
+
