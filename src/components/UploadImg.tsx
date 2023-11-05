@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
+import AnswerBoxes from './AnswerBoxes'; // Import the AnswerBoxes component
+
 
 const UploadImg: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -7,6 +9,7 @@ const UploadImg: React.FC = () => {
   const [extractedText, setExtractedText] = useState<string>('');
   const [isUploading, setIsUploading] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
 
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
@@ -52,13 +55,9 @@ const UploadImg: React.FC = () => {
         {isUploading ? 'Uploading...' : 'Upload and Parse Image'}
       </button>
       {fileName && <div>Selected file: {fileName}</div>}
-      {extractedText && (
-        <textarea
-          value={extractedText}
-          readOnly
-          style={{ width: '100%', height: '150px', marginTop: '10px' }}
-        />
-      )}
+      
+      <AnswerBoxes extractedText={extractedText} />
+      
     </div>
   );
 };
