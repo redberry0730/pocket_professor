@@ -8,6 +8,7 @@ const Header: React.FC = () => (
       fontSize: '20px',
       marginBottom: '20px'
        }}>
+      <img src="./prof.png" alt="Header Image" style={{ maxWidth: '100%' }} />
       <h1>POCKET PROFESSOR</h1>
     </header>
   );
