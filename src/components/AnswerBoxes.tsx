@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const AnswerBoxes: React.FC = () => {
@@ -7,7 +6,8 @@ const AnswerBoxes: React.FC = () => {
   const [correctAnswer, setCorrectAnswer] = useState('');
 
   return (
-    <div id="answerBoxes" className="rounded-box">
+    <div style={{}}>
+    <div id="answerBoxes" className="rounded-box" style={{backgroundColor:'lightgreen', padding: '10px', paddingBottom: '30px', borderRadius:'30px', marginTop:'20px', width:'750px', marginLeft:'570px'}}>
       <div>
         <label style={{fontWeight: 'bold', marginRight:'610px'}}>Question:</label>
         <br />
@@ -23,6 +23,7 @@ const AnswerBoxes: React.FC = () => {
         <br />
         <textarea value={correctAnswer} onChange={(e) => setCorrectAnswer(e.target.value)} style={{width:'700px', height: '150px'}} />
       </div>
+    </div>
     </div>
   );
 };
